@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadatos esenciales -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enlaces a Bootstrap y Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- Título de la página -->
+    <title>Testimonios</title>
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <nav class="container">
+            <!-- Logo de la página -->
+            <a class="navbar-brand" href="../index.html">
+                <img
+                    src="../img/logo.png"
+                    class="w-50"
+                    alt="Bandera del Reino Unido como logo para volver al inicio"
+                />
+            </a>
+
+            <!-- Botón de navegación para dispositivos móviles -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./mi-perfil.html">Mi Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./login.html">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de introducción a testimonios -->
+        <section class="testimonios">
+            <h1>Testimonios</h1>
+            <p class="no-negrita">
+                En nuestra plataforma, nos enorgullece ver cómo nuestros cursos
+                transforman la vida de nuestros estudiantes. Cada testimonio es una
+                prueba del impacto positivo que hemos logrado en sus habilidades y
+                confianza. Nuestros estudiantes no solo adquieren conocimientos, sino
+                que también experimentan un cambio real en su capacidad para utilizar
+                el idioma en situaciones cotidianas y profesionales.
+            </p>
+            <p class="no-negrita">
+                A continuación, podrás leer experiencias detalladas de quienes han
+                pasado por nuestros programas. Ellos comparten cómo nuestra
+                metodología y el apoyo constante han sido clave para su progreso. Sus
+                historias reflejan los logros alcanzados y la satisfacción de haber
+                tomado una decisión que ha marcado una diferencia en su vida.
+            </p>
+            <p class="no-negrita">
+                Te invitamos a explorar estos testimonios para entender mejor los
+                beneficios y resultados que ofrecemos. Cada experiencia es única y te
+                dará una visión más clara de cómo podemos ayudarte a alcanzar tus
+                objetivos de aprendizaje.
+            </p>
+        </section>
+
+        <!-- Sección con testimonios individuales -->
+        <section class="testimonios">
+            <div class="testimonio">
+                <p class="cita">
+                    "Este curso ha sido una experiencia transformadora. He visto mejoras
+                    significativas en mi habilidad para comunicarme en inglés, tanto en
+                    lo personal como en lo profesional."
+                </p>
+                <p class="autor">- Juan Pérez</p>
+            </div>
+            <div class="testimonio">
+                <p class="cita">
+                    "Los profesores son extremadamente competentes y apasionados por la
+                    enseñanza. El contenido es de alta calidad y está diseñado para ser
+                    práctico y aplicable."
+                </p>
+                <p class="autor">- María Gómez</p>
+            </div>
+            <div class="testimonio">
+                <p class="cita">
+                    "Recomiendo encarecidamente este curso a cualquier persona que desee
+                    mejorar su inglés. La metodología es eficaz y el ambiente de
+                    aprendizaje es muy acogedor."
+                </p>
+                <p class="autor">- Luis Fernández</p>
+            </div>
+            <div class="testimonio">
+                <p class="cita">
+                    "Este curso ha superado mis expectativas. La calidad de la enseñanza
+                    es excepcional, y he notado una mejora notable en mi habilidad para
+                    comunicarme en inglés tanto en el ámbito profesional como personal.
+                    El enfoque práctico y los recursos adicionales han sido muy útiles."
+                </p>
+                <p class="autor">- Marta López</p>
+            </div>
+        </section>
+
+        <!-- Formulario para enviar testimonios -->
+        <section>
+            <form class="formulario-testimonio" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="testimonio">Tu testimonio:</label>
+                    <textarea id="testimonio" name="testimonio" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Testimonio</button>
+            </form>
+        </section>
+    </main>
+
+   <!-- Pie de página -->
+   <footer class="bg-dark text-white py-4">
+    <div class="container footer-text">
+        <div class="row text-center text-md-left">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <p>Kevin Davezac 2024</p>
+                <p>Todos los derechos reservados</p>
+                <p>languagesok@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                <h3>Nuestras Redes</h3>
+                <div>
+                  <a href="https://www.instagram.com/kevin_davezac/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>

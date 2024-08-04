@@ -1,0 +1,442 @@
+/* Eliminar estilos predeterminados para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+    /* Establece la fuente del texto */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Estilos generales para dispositivos móviles (mobile-first) */
+.container-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.container-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.container-forma-enseñar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.elemento {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustar el estilo del párrafo */
+.elemento p {
+    font-family: Arial, sans-serif;
+    /* Cambiar la fuente a algo más ligero */
+    font-weight: 300;
+    /* Ajustar el grosor de la fuente */
+    font-size: 1rem;
+    /* Tamaño de fuente */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 80%;
+    height: auto;
+}
+
+/* Estilos para el botón */
+.btn-grande {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+/* Eliminar subrayado del enlace dentro del botón */
+.btn-grande a {
+    text-decoration: none;
+    /* Eliminar subrayado del enlace */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
+}
+
+.btn-grande:hover {
+    background-color: #797878;
+}
+
+/* Estilos para los cursos dentro de index */
+.curso {
+    background-color: rgb(245, 235, 217);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.curso h3 {
+    font-size: 20px;
+}
+
+.curso p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.btn-chico {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px 6px;
+    margin-bottom: 10px;
+}
+
+/* Eliminar subrayado del enlace dentro del botón */
+.btn-chico a {
+    text-decoration: none;
+    /* Eliminar subrayado del enlace */
+    color: rgb(255, 255, 255);
+    /* Color del texto */
+}
+
+.btn-chico:hover {
+    background-color: #797878;
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* Relación de aspecto 16:9 */
+    overflow: hidden;
+    background: #000;
+    /* Color de fondo opcional para el contenedor */
+    margin-bottom: 20px;
+    /* Espacio inferior opcional */
+}
+
+/* Estilos para el iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    /* Eliminar borde si es necesario */
+}
+
+
+/*Estilos para los cursos*/
+.container-section-cursos {
+    background-color: whitesmoke;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.container-section-cursos li {
+    list-style: none;
+}
+
+
+.bg-gray {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif;
+}
+
+
+/*Estilos para los testimonios*/
+
+.testimonios {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.no-negrita {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonio {
+    background-color: rgb(116, 114, 114);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    /* Limitar el ancho máximo si es necesario */
+}
+
+.cita {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-size: 0.875rem;
+    text-align: right;
+}
+
+/* Estilos para la sección del formulario */
+.formulario-testimonio {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Estilos para mi perfil*/
+
+.container-logros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.container-logros li{
+    list-style: none;
+    text-align: center;
+}
+
+/*Estilos para nosotros*/
+
+.container-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+/*------------------CSS DEL LOGIN------------------*/
+
+body.body-container {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url('../img/login.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title-login-register {
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-container label {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+    color: #333;
+}
+
+.login-container input {
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    border: solid 1px #000;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn-login {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d42222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background-color: #a01b1b;
+}
+
+.login-container p {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: #333;
+}
+
+/* Media query para pantallas más grandes (a partir de 992px) */
+@media screen and (min-width: 992px) {
+    .container-index {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .elemento {
+        text-align: left;
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    .image-container {
+        flex: 1;
+        justify-content: flex-end;
+        padding-left: 20px;
+    }
+
+    .image-container img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .container-cursos {
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .container-section-cursos {
+        display: inline-block;
+        width: 30%;
+        margin: 1%;
+        vertical-align: top;
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        text-align: center;
+    }
+
+    .container-section-cursos li {
+        list-style: none;
+    }
+
+    /*Registro-login*/
+
+    .title-login-register {
+        font-size: 28px;
+    }
+
+    .login-container label {
+        font-size: 18px;
+    }
+
+    .login-container input {
+        font-size: 16px;
+    }
+
+    .btn-login {
+        font-size: 18px;
+    }
+
+}

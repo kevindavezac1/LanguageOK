@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Login</title>
+</head>
+<body class="body-container">
+    <!-- Contenedor principal del contenido -->
+    <main>
+      <!-- Contenedor principal del formulario de login -->
+      <div class="login-container">
+        <!-- Formulario de inicio de sesión -->
+        <form action="../index.html" class="login-form">
+          <!-- Título del formulario de inicio de sesión -->
+          <h1 class="title-login-register">LanguageOK-Login</h1>
+  
+          <!-- Campo para el correo electrónico -->
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email" />
+  
+          <!-- Campo para la contraseña -->
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" />
+  
+          <!-- Botón para enviar el formulario -->
+          <button type="submit" class="btn-login">Iniciar Sesión</button>
+        </form>
+  
+        <!-- Segundo formulario para redirigir al usuario a la página de registro -->
+        <form action="./registro.html" class="login-form">
+          <!-- Mensaje para usuarios que aún no tienen cuenta -->
+          <p>¿Aún no tienes una cuenta?</p>
+          <!-- Botón para registrarse -->
+          <button type="submit" class="btn-login">Registrarse</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
