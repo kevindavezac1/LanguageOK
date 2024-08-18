@@ -1,0 +1,91 @@
+@import "variables";
+@import "mixins";
+
+// Estilos para los contenedores
+.container-index,
+.container-cursos,
+.container-forma-enseñar,
+.container-logros,
+.container-nosotros,
+.container-section-cursos,
+.testimonios {
+  @include center-flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: $bg-color;
+}
+
+// Estilos para los videos
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; // Relación de aspecto 16:9
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 20px;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+// Ajustes responsivos para .image-container y sus imágenes
+.image-container {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// Estilos para pantallas pequeñas (sm)
+@include respond-to(sm) {
+  .image-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Estilos para pantallas medianas (md)
+@include respond-to(md) {
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Estilos para pantallas grandes (lg)
+@include respond-to(lg) {
+  .image-container {
+    flex: 1;
+    justify-content: flex-end;
+    padding-left: 20px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Estilos para las listas en ciertos contenedores
+.container-section-cursos li,
+.container-logros li {
+  list-style: none;
+}

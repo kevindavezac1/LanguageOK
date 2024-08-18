@@ -1,0 +1,44 @@
+@import "variables";
+
+%btn-base {
+  background-color: $btn-bg-color;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: $btn-color;
+
+  &:hover {
+    background-color: $btn-hover-bg-color;
+  }
+
+  a {
+    text-decoration: none;
+    color: $btn-color;
+  }
+}
+
+.btn-grande {
+  @extend %btn-base;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.btn-chico {
+  @extend %btn-base;
+  padding: 2px 6px;
+  margin-bottom: 10px;
+}
+
+.btn-login {
+  @extend %btn-base;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d42222;
+  color: white;
+  width: 100%;
+
+  &:hover {
+    background-color: #a01b1b;
+  }
+}

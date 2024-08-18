@@ -1,0 +1,57 @@
+body.body-container {
+  font-family: $font-family-default;
+  background-image: url("../img/fondo-login-comprimida-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-container label {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+  color: #333;
+}
+
+.login-container input {
+  padding: 10px;
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  border: solid 1px #000;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.login-container .title-login-register {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-container p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #333;
+}

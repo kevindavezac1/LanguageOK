@@ -1,0 +1,80 @@
+@import "variables";
+@import "mixins";
+
+// Estilos generales que se aplican por defecto
+.image-container img {
+  max-width: 100%;
+  height: auto;  // Mantiene la proporción de la imagen
+}
+
+// Estilos para pantallas grandes (lg)
+@include respond-to(lg) {
+  .container-index {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .elemento {
+    text-align: center;
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  .image-container {
+    flex: 1;
+    justify-content: flex-end;
+    padding-left: 20px;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .container-section-cursos {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: center;    
+  }
+
+  .title-login-register {
+    font-size: 28px;
+  }
+
+  .login-container label {
+    font-size: 18px;
+  }
+
+  .login-container input {
+    font-size: 16px;
+  }
+
+  .btn-login {
+    font-size: 18px;
+  }
+}
+
+// Estilos para pantallas medianas (md)
+@include respond-to(md) {
+  .image-container img {
+    max-width: 100%;  // La imagen ocupa el 100% del ancho del contenedor padre
+    height: auto;
+  }
+}
+
+// Estilos para pantallas pequeñas (sm)
+@include respond-to(sm) {
+  .image-container {
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}
+

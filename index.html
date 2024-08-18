@@ -12,6 +12,12 @@
     />
     <!-- Enlace a Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Enlace a Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Enalce para transiciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    
     <!-- Enlace a CSS personalizado -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -19,12 +25,12 @@
   </head>
   <body>
     <!-- Cabecera de la página -->
-    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <header class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg  bg-body-tertiary border-bottom">
       <nav class="container">
         <!-- Logo de la página -->
         <a class="navbar-brand" href="./index.html">
           <img
-            src="./img/logo.png"
+            src="./img/logo-min.png"
             class="w-50"
             alt="bandera del Reino Unido como logo para volver al inicio"
           />
@@ -49,19 +55,19 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/cursos.html">Cursos</a>
+              <a class="nav-link navbar-custom-font" aria-current="page" href="./pages/cursos.html">Cursos</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/testimonios.html">Testimonios</a>
+              <a class="nav-link navbar-custom-font" aria-current="page" href="./pages/testimonios.html">Testimonios</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+              <a class="nav-link navbar-custom-font" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/login.html">Cerrar Sesion</a>
+              <a class="nav-link navbar-custom-font" aria-current="page" href="./pages/login.html">Cerrar Sesion</a>
             </li>
           </ul>
         </div>
@@ -78,9 +84,9 @@
           <!-- Botón para comenzar -->
           <button class="btn-grande"><a href="./pages/cursos.html">Comencemos</a></button>
         </div>
-        <div class="image-container">
+        <div class="image-container d-none d-sm-block">
             <!-- Imagen de fondo -->
-            <img src="img/img-do it.jpg" alt="Imagen que dice 'just do it'">
+            <img src="./img/img-do it-min.jpg" alt="Imagen que dice 'just do it'">
         </div>
       </section>
 
@@ -91,25 +97,34 @@
         </div>
 
         <!-- Curso Elementary -->
-        <div class="curso">
+        <div data-aos="slide-left" data-aos-duration="4000">
+          <div class="curso">
             <h3>Elementary</h3>
             <p>Este curso está diseñado para principiantes en inglés. Cubre conceptos fundamentales como vocabulario básico, gramática elemental y habilidades de conversación simple. Además, se enfoca en desarrollar la comprensión auditiva y la habilidad para formular frases y preguntas sencillas. Los estudiantes aprenderán a presentarse, describir su entorno y mantener conversaciones básicas sobre temas cotidianos.</p>
             <button class="btn-chico"><a href="./pages/cursos.html">Ver Curso</a></button>
         </div>
+        </div> 
 
         <!-- Curso Intermediate -->
-        <div class="curso">
+        <div data-aos="slide-right" data-aos-duration="4000">
+          <div class="curso">
             <h3>Intermediate</h3>
             <p>Dirigido a estudiantes con un conocimiento básico previo del inglés. Se enfoca en expandir el vocabulario, mejorar la comprensión auditiva y desarrollar habilidades para expresarse con mayor fluidez en situaciones cotidianas y laborales.</p>
             <button class="btn-chico"><a href="./pages/cursos.html"> Ver Curso</a></button>
         </div>
+        </div>
+
+
 
         <!-- Curso Advanced -->
-        <div class="curso">
+        <div data-aos="slide-left" data-aos-duration="4000">
+          <div class="curso">
             <h3>Advanced</h3>
             <p>Diseñado para estudiantes que ya tienen un dominio sólido del inglés. Este curso se centra en perfeccionar la gramática avanzada, ampliar el vocabulario técnico y académico, y mejorar la habilidad para comunicarse de manera efectiva en contextos complejos y profesionales.</p>
             <button class="btn-chico"><a href="./pages/cursos.html"> Ver Curso</a></button>
         </div>
+        </div> 
+
       </section>
 
       <!-- Sección de nuestra forma de enseñar -->
@@ -153,5 +168,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
