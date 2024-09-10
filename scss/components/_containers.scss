@@ -1,8 +1,7 @@
 @import "variables";
 @import "mixins";
 
-// Estilos para los contenedores
-.container-index,
+// Estilos para los contenedores generales
 .container-cursos,
 .container-forma-enseñar,
 .container-logros,
@@ -14,6 +13,15 @@
   margin-top: 20px;
   padding: 10px 0;
   background-color: $bg-color;
+}
+
+.container-index{
+  @include center-flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: $bg-color;
+  height: 80vh;
 }
 
 // Estilos para los videos
@@ -35,6 +43,15 @@
   }
 }
 
+// Estilos para el perfil
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: $bg-color;
+}
+
 // Ajustes responsivos para .image-container y sus imágenes
 .image-container {
   width: 100%;
@@ -46,14 +63,26 @@
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
   }
+}
+
+// Estilos para el contenedor "Nosotros"
+.container-nosotros {
+  width: 100%; 
+  padding: 20px;
+}
+
+// Estilos para el contenedor de testimonios
+.testimonios {
+  width: 100%; 
+  padding: 20px;
 }
 
 // Estilos para pantallas pequeñas (sm)
 @include respond-to(sm) {
-  .image-container {
-    width: 100%;
-    padding: 10px;
+  .container-perfil {
+    flex-direction: column;
   }
 
   .image-container img {
@@ -64,23 +93,78 @@
 
 // Estilos para pantallas medianas (md)
 @include respond-to(md) {
+  .container-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .image-container {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .text-container {
+    padding: 0;
+    text-align: center;
+  }
+
   .image-container img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    border-radius: 10px;
+  }
+
+  .container-nosotros,
+  .testimonios {
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+
+  .curso p {
+    max-width: 50%; 
+    margin: 0 auto; 
   }
 }
 
 // Estilos para pantallas grandes (lg)
 @include respond-to(lg) {
+  .container-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
   .image-container {
     flex: 1;
-    justify-content: flex-end;
-    padding-left: 20px;
+    padding-left: 20px; 
+  }
+
+  .text-container {
+    flex: 1;
+    padding-right: 20px;
   }
 
   .image-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+  }
+
+  .container-nosotros,
+  .testimonios {
+    width: 60%; 
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+
+
+  .curso p {
+    max-width: 50%; 
+    margin: 0 auto; 
   }
 }
 

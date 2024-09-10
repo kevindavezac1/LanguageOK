@@ -52,7 +52,6 @@ body {
   background-color: #a01b1b;
 }
 
-.container-index,
 .container-cursos,
 .container-forma-enseñar,
 .container-logros,
@@ -66,6 +65,17 @@ body {
   margin-top: 20px;
   padding: 10px 0;
   background-color: whitesmoke;
+}
+
+.container-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: whitesmoke;
+  height: 80vh;
 }
 
 .video-container {
@@ -85,6 +95,14 @@ body {
   border: 0;
 }
 
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
 .image-container {
   width: 100%;
   max-width: 100%;
@@ -95,12 +113,22 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
+}
+
+.container-nosotros {
+  width: 100%;
+  padding: 20px;
+}
+
+.testimonios {
+  width: 100%;
+  padding: 20px;
 }
 
 @media (min-width: 576px) {
-  .image-container {
-    width: 100%;
-    padding: 10px;
+  .container-perfil {
+    flex-direction: column;
   }
   .image-container img {
     max-width: 100%;
@@ -108,20 +136,65 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .container-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .image-container {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .text-container {
+    padding: 0;
+    text-align: center;
+  }
   .image-container img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    border-radius: 10px;
+  }
+  .container-nosotros,
+  .testimonios {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .curso p {
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
 @media (min-width: 992px) {
+  .container-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
   .image-container {
     flex: 1;
-    justify-content: flex-end;
     padding-left: 20px;
+  }
+  .text-container {
+    flex: 1;
+    padding-right: 20px;
   }
   .image-container img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+  }
+  .container-nosotros,
+  .testimonios {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .curso p {
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
 .container-section-cursos li,
@@ -188,6 +261,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .formulario-testimonio .form-group {
   margin-bottom: 15px;
@@ -234,7 +308,7 @@ body.body-container {
 }
 
 .login-container {
-  width: 90%;
+  width: 300px;
   max-width: 400px;
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
